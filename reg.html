@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Population Management Portal System</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-5.1.0-dist/css/bootstrap.css.map'>
+    <script src='bootstrap-5.1.0-dist/js/bootstrap.js.map'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Citizens
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Buldana</a></li>
+                            <li><a class="dropdown-item" href="#">Chikhli</a></li>
+                            <li><a class="dropdown-item" href="#">Shegaon</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Type
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Student</a></li>
+                            <li><a class="dropdown-item" href="#">Hospital</a></li>
+                            <li><a class="dropdown-item" href="#">Government</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="reg.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <form>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputname" class=" col-form-label">Name:</label>
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="Surname">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="middle name">
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputname" class=" col-form-label">Mobile No:</label>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="Mobile no.">
+            </div>
+            <div class="col-1">
+                <label for="inputname" class=" col-form-label">Mail-Id:</label>
+            </div>
+            <div class="col-4">
+                <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputdesig" class="col-form-label">Designation:</label>
+            </div>
+            <div class="col-4">
+                <select id="inputdesig" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>CLASS I</option>
+                    <option>CLASS II</option>
+                    <option>CLASS III</option>
+                </select>
+            </div>
+            <div class="col-1">
+                <label for="inputgender" class="col-form-label">Gender:</label>
+            </div>
+            <div class="col-4">
+                <select id="inputgender" class="form-control">
+                    <option selected>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputdist" class="col-form-label">District:</label>
+            </div>
+            <div class="col-4">
+                <select id="inputdist" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-1">
+                <label for="inputtaluka" class="col-form-label">Taluka:</label>
+            </div>
+            <div class="col-4">
+                <select id="inputtaluka" class="form-control">
+                    <option selected>Choose</option>
+                    <option>..</option>
+                    <option>..</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputtype" class="col-form-label">Institute Type:</label>
+            </div>
+            <div class="col-4">
+                <select id="inputtype" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select></div>
+            <div class="col-1">
+                <label for="inputdob" class=" col-form-label">DOB:</label>
+            </div>
+            <div class="col-4">
+                <input type="date" class="form-control" placeholder="DOB">
+            </div>
+
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputuser" class=" col-form-label">User Name:</label>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control" placeholder="User-name">
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputpassword" class=" col-form-label">Password:</label>
+            </div>
+            <div class="col-4">
+                <input type="password" class="form-control" placeholder="password">
+            </div>
+        </div>
+        <div class="form-group row mt-2">
+            <div class="col-2">
+                <label for="inputreenter" class=" col-form-label">Confirm Password:</label>
+            </div>
+            <div class="col-4">
+                <input type="password" class="form-control" placeholder="Confirm password">
+            </div>
+        </div>
+        </div>
+        <div class="col-2 mx-auto d-block mt-3 ">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Submit
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Cancel
+            </button>
+        </div>
+        <div><br>
+
+    </form><br>
+    <!-- Button trigger modal -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terms & Conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus nobis, tenetur, non
+                            dolorem fugit iste reprehenderit eveniet autem provident saepe alias quo repudiandae optio
+                            mollitia adipisci soluta ad. Sapiente!</p>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Terms & Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="container text-left">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2020-2021 Population Management Portal, All Rights Reserved </p>
+
+</footer>
+
+</html>
